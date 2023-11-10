@@ -1,6 +1,7 @@
 opencv-python-headless==4.8.1.78
 pythainlp==4.0.2
 pandas==2.1.1
+python-Levenshtein==0.23.0
 fastapi==0.104.0
 uvicorn[standard]==0.17.*
 python-multipart==0.0.6
