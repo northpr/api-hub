@@ -1,6 +1,12 @@
-FROM python:3.9-slim
+FROM python:3.10-slim
 
-WORKDIR /user/src/app
+# Keeps Python from generating .pyc files in the container
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Turns off buffering for easier container logging
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /usr/src/app
 
 COPY requirements.txt .
 
